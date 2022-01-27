@@ -1,0 +1,51 @@
+AppBundle\Entity\Question:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\QuestionRepository
+    id:
+        qId:
+            type: integer
+            id: true
+            column: q_id
+            generator:
+                strategy: AUTO
+    fields:
+        lId:
+            type: integer
+            column: l_id
+        qQuestion:
+            type: string
+            length: 255
+            column: q_question
+        qOption1:
+            type: string
+            length: 255
+            column: q_option1
+        qOption2:
+            type: string
+            length: 255
+            column: q_option2
+        qOption3:
+            type: string
+            length: 255
+            column: q_option3
+        qOption4:
+            type: string
+            length: 255
+            column: q_option4
+        qRightNumber:
+            type: integer
+            column: q_right_number
+        qCreateuid:
+            type: integer
+            column: q_createuid
+        qCreatedate:
+            type: datetime
+            column: q_createdate
+        qModifyuid:
+            type: integer
+            column: q_modifyuid
+        qModifydate:
+            type: datetime
+            column: q_modifydate
+    lifecycleCallbacks: {  }

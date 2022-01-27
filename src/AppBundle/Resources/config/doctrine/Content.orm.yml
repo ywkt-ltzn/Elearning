@@ -1,0 +1,44 @@
+AppBundle\Entity\Content:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ContentRepository
+    id:
+        cId:
+            type: integer
+            id: true
+            column: c_id
+            generator:
+                strategy: AUTO
+    fields:
+        lId:
+            type: integer
+            column: l_id
+            
+        cTitle:
+            type: string
+            length: 255
+            column: c_title
+        cNote:
+            type: text
+            column: c_note
+        cImg:
+            type: string
+            length: 255
+            column: c_img
+        cVideo:
+            type: string
+            length: 255
+            column: c_video
+        cCreateuid:
+            type: integer
+            column: c_createuid
+        cCreatedate:
+            type: datetime
+            column: c_createdate
+        cModifyuid:
+            type: integer
+            column: c_modifyuid
+        cModifydate:
+            type: datetime
+            column: c_modifydate
+    lifecycleCallbacks: {  }

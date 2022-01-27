@@ -1,0 +1,37 @@
+AppBundle\Entity\Answer:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\AnswerRepository
+    id:
+        aId:
+            type: integer
+            id: true
+            column: a_id
+            generator:
+                strategy: AUTO
+    fields:
+        qId:
+            type: integer
+            column: q_id
+        uId:
+            type: integer
+            column: u_id
+        lId:
+            type: integer
+            column: l_id
+        aAnswer:
+            type: integer
+            column: a_answer
+        aCreateuid:
+            type: integer
+            column: a_createuid
+        aCreatedate:
+            type: datetime
+            column: a_createdate
+        aModifyuid:
+            type: integer
+            column: a_modifyuid
+        aModifydate:
+            type: datetime
+            column: a_modifydate
+    lifecycleCallbacks: {  }

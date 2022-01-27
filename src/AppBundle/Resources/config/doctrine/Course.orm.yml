@@ -1,0 +1,32 @@
+AppBundle\Entity\Course:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\CourseRepository
+    id:
+        couId:
+            type: integer
+            id: true
+            column: cou_id
+            generator:
+                strategy: AUTO
+    fields:
+        couName:
+            type: string
+            length: 255
+            column: cou_name
+        uId:
+            type: integer
+            column: u_id
+        couCreateuid:
+            type: integer
+            column: cou_createuid
+        couCreatedate:
+            type: datetime
+            column: cou_createdate
+        couModifyuid:
+            type: integer
+            column: cou_modifyuid
+        couModifydate:
+            type: datetime
+            column: cou_modifydate
+    lifecycleCallbacks: {  }

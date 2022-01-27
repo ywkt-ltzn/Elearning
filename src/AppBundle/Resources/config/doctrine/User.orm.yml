@@ -1,0 +1,62 @@
+AppBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\UserRepository
+    id:
+        uId:
+            type: integer
+            id: true
+            column: u_id
+            generator:
+                strategy: AUTO
+    fields:
+        uName:
+            type: string
+            length: 255
+            column: u_name
+        uUserName:
+            type: string
+            length: 255
+            column: u_username
+        uPhone:
+            type: string
+            length: 255
+            column: u_phone
+        uEmail:
+            type: string
+            length: 255
+            column: u_email
+        uAddress:
+            type: string
+            length: 255
+            column: u_address
+        uPassword:
+            type: string
+            length: max
+            column: u_password
+        uRole:
+            type: integer
+            column: u_role
+        uGender:
+            type: integer
+            column: u_gender
+        uDOB:
+            type: string
+            length: 255
+            column: u_dob
+        uActive:
+            type: integer
+            column: u_active
+        uCreateuid:
+            type: integer
+            column: u_createuid
+        uCreatedate:
+            type: datetime
+            column: u_createdate
+        uModifyuid:
+            type: integer
+            column: u_modifyuid
+        uModifydate:
+            type: datetime
+            column: u_modifydate
+    lifecycleCallbacks: {  }

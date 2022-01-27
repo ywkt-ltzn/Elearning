@@ -1,0 +1,17 @@
+AppBundle\Entity\UserRole:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\UserRoleRepository
+    id:
+        rId:
+            type: integer
+            id: true
+            column: r_id
+            generator:
+                strategy: AUTO
+    fields:
+        rName:
+            type: string
+            length: 255
+            column: r_name
+    lifecycleCallbacks: {  }
